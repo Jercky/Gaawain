@@ -8,7 +8,7 @@ Game::Game()
 , mPlayer()
 , mTexture()
 {
-    if (!mTexture.loadFromFile("Data/Textures/Herso.png"))
+    if (!mTexture.loadFromFile("Data/Textures/Hero.png"))
     {
         throw std::runtime_error("TextureHolder::load - Failed to load Data/Textures/Herso.png");
     }
@@ -69,13 +69,13 @@ void Game::update(sf::Time deltaTime)
     sf::Vector2f movement(0.f, 0.f);
 
     if (mIsMovingUp)
-        movement.y -= 1.f;
+        movement.y -= 16.f;
     if (mIsMovingDown)
-        movement.y += 1.f;
+        movement.y += 16.f;
     if (mIsMovingLeft)
-        movement.x -= 1.f;
+        movement.x -= 16.f;
     if (mIsMovingRight)
-        movement.x += 1.f;
+        movement.x += 16.f;
 
     mPlayer.move(movement * deltaTime.asSeconds());
 }
