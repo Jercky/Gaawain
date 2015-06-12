@@ -1,14 +1,14 @@
 Niveau01
 FirstTower
 Data/Textures/tile.png
-6 11
-MMMMMMMMMMM
-MJ      MMM
-M  M    PTM
-M  M    MMM
-M 1M   P@2M
-MMMMMMMMMMM
-7
+6 15
+MMMMMMMMMMM    
+MJ......MMM    
+M..M....PTMMMM 
+M..M.........M 
+M.1M...P@2MMMM 
+MMMMMMMMMMM    
+8
 J Joueur()
 M Mur(Indesctructible)
 T Teleporteur(Niveau02,3,4,"Vous êtes téléporté à un autre niveau du donjon !")
@@ -16,3 +16,4 @@ T Teleporteur(Niveau02,3,4,"Vous êtes téléporté à un autre niveau du donjon !")
 P Porte(1,"C'est une grosse porte rouillée.","La clé déverrouille la porte et celle-ci s'ouvre sans difficulté.")
 @ Monstre(Gobelin,...)
 2 Arme(18,...)
+. Ground()
